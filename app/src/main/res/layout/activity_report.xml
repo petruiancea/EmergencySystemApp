@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".Report">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textViewTypeOfEmergency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/report_type_of_emergency" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupChooseTypeOfEmergency"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonInternalBreakOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/report_internal_breakout" />
+
+            <RadioButton
+                android:id="@+id/radioButtonExternalBreakOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/report_external_breakout" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editTextReportComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:lines="5"
+            android:maxLines="5"
+            android:gravity="start"
+            android:inputType="textMultiLine"
+            android:text="@string/comment_textbox"/>
+
+        <Button
+            android:id="@+id/buttonReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_report" />
+    </LinearLayout>
+</RelativeLayout>

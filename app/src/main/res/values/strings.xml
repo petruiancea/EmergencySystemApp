@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Emergency</string>
+    <string name="button_report">Report</string>
+    <string name="button_messages">Messages</string>
+    <string name="login_id">ID</string>
+    <string name="button_login">Login</string>
+    <string name="button_register">Register</string>
+    <string name="report_type_of_emergency">Type of emergency:</string>
+    <string name="report_internal_breakout">Internal break out</string>
+    <string name="report_external_breakout">External break out</string>
+    <string name="comment_textbox">Comment</string>
+    <string name="choose_role">Choose a role</string>
+    <string name="radiobutton_security_officer">Security Officer</string>
+    <string name="radiobutton_director">Director</string>
+    <string name="button_select">Select</string>
+</resources>
