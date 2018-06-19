@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark"
     android:gravity="center"
     tools:context=".Report">
 
@@ -17,7 +18,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:text="@string/report_type_of_emergency" />
+            android:text="@string/report_type_of_emergency"
+            android:textColor="?android:attr/colorForeground" />
 
         <RadioGroup
             android:id="@+id/radioGroupChooseTypeOfEmergency"
@@ -30,14 +32,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/report_internal_breakout" />
+                android:text="@string/report_internal_breakout"
+                android:textColor="?android:attr/colorForeground" />
 
             <RadioButton
                 android:id="@+id/radioButtonExternalBreakOut"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/report_external_breakout" />
+                android:text="@string/report_external_breakout"
+                android:textColor="?android:attr/colorForeground" />
         </RadioGroup>
 
         <EditText
@@ -46,16 +50,19 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:ems="10"
-            android:lines="5"
-            android:maxLines="5"
             android:gravity="start"
             android:inputType="textMultiLine"
-            android:text="@string/comment_textbox"/>
+            android:lines="5"
+            android:maxLines="5"
+            android:text="@string/comment_textbox"
+            android:textColor="?android:attr/colorForeground" />
 
         <Button
             android:id="@+id/buttonReport"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/button_report" />
+            android:background="@android:color/holo_red_dark"
+            android:text="@string/button_report"
+            android:textColor="?android:attr/colorForeground" />
     </LinearLayout>
 </RelativeLayout>

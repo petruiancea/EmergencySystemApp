@@ -3,26 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark"
     android:gravity="center"
     tools:context=".MainMenu">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@android:color/white"
         android:orientation="vertical"
         android:padding="20dp">
 
-    <Button
-        android:id="@+id/buttonReport"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="@string/button_report" />
+        <Button
+            android:id="@+id/buttonReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="@string/button_report"
+            android:textColor="?android:attr/colorForeground" />
 
-    <Button
-        android:id="@+id/buttonMessages"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/button_messages" />
+        <Button
+            android:id="@+id/buttonMessages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light"
+            android:text="@string/button_messages"
+            android:textColor="?android:attr/colorForeground" />
     </LinearLayout>
 </RelativeLayout>

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark"
     android:gravity="center"
     tools:context=".Login">
 
@@ -19,7 +20,8 @@
             android:layout_marginBottom="20dp"
             android:ems="10"
             android:inputType="text"
-            android:text="@string/login_id" />
+            android:text="@string/login_id"
+            android:textColor="?android:attr/colorForeground" />
 
         <EditText
             android:id="@+id/editTextLoginPassword"
@@ -27,13 +29,16 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
             android:ems="10"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textColor="?android:attr/colorForeground" />
 
         <Button
             android:id="@+id/buttonLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/button_login" />
+            android:background="@android:color/holo_green_light"
+            android:text="@string/button_login"
+            android:textColor="?android:attr/colorForeground" />
     </LinearLayout>
 
 </RelativeLayout>

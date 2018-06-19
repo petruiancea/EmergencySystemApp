@@ -3,12 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark"
     android:gravity="center"
     tools:context=".ChooseRole">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@android:color/white"
         android:orientation="vertical"
         android:padding="20dp">
 
@@ -16,29 +18,32 @@
             android:id="@+id/textViewChooseRole"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:text="@string/choose_role"
-            android:layout_marginBottom="10dp"/>
+            android:textColor="?android:attr/colorForeground" />
 
         <RadioGroup
             android:id="@+id/radioGroupChooseRole"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="start"
-            android:layout_marginBottom="30dp">
+            android:layout_marginBottom="30dp"
+            android:gravity="start">
 
             <RadioButton
                 android:id="@+id/radioButtonSecurityOfficer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/radiobutton_security_officer" />
+                android:text="@string/radiobutton_security_officer"
+                android:textColor="?android:attr/colorForeground" />
 
             <RadioButton
                 android:id="@+id/radioButtonDirector"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/radiobutton_director" />
+                android:text="@string/radiobutton_director"
+                android:textColor="?android:attr/colorForeground" />
         </RadioGroup>
 
         <Button
@@ -46,6 +51,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/button_select" />
+            android:background="@android:color/holo_green_light"
+            android:text="@string/button_select"
+            android:textColor="?android:attr/colorForeground" />
     </LinearLayout>
 </RelativeLayout>
